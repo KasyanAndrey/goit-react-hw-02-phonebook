@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 320px;
   padding: 0 20px 12px 10px;
-  border: 2px solid rgb(136, 136, 136);
+  border: 1px solid rgb(136, 136, 136);
   border-radius: 3px;
   background-color: lightgoldenrodyellow;
 }
@@ -11,13 +11,13 @@
 .input {
   width: 190px;
   margin-bottom: 5px;
-  border: 2px solid #999;
+  border: 1px solid #999;
   outline: none;
   border-radius: 3px;
 }
 
 .input:focus {
-  border: 2px solid rgb(71, 177, 209, 0.6);
+  border: 1px solid rgb(71, 177, 209, 0.6);
 }
 
 .number {
@@ -26,7 +26,7 @@
 
 .btn {
   width: 100px;
-  border: 2px solid #999;
+  border: 1px solid #999;
   border-radius: 3px;
   background-color: #fff;
   outline: none;
