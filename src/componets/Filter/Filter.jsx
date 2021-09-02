@@ -1,11 +1,18 @@
 import React from 'react';
-import s from './Filter.module.css'
+import PropTypes from 'prop-types';
 
-const Filter = ({filter, changeFilter}) => (
-    <label htmlFor="">
-        <p className={s.title}>Find contacts by name</p>
-        <input type="text" value={filter} onChange={changeFilter} className={s.input}/>
-    </label>
-)
+import s from './Filter.module.css';
+
+const Filter = ({ value, onChange }) => (
+  <label htmlFor="">
+    <p className={s.title}>Find contacts by name</p>
+    <input type="text" value={value} onChange={onChange} className={s.input} />
+  </label>
+);
+
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default Filter;
